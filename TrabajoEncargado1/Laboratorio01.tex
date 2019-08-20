@@ -16,10 +16,7 @@
 
 
 \title{Comparativa Business Intelligence vs Business Analytics}
-\author{Richard Cruz Escalante}
-\author{Arlyn Cotrado Coaquira}
-\author{David Damian Mamani}
-\author{Andrés De La Barra Vasquez}
+\author{Nilson Laura Atencio}
 \affiliation{%
  Universidad Privada de Tacna \textbackslash Facultad de Ingenieria \textbackslash Escuela Profesional de Ingenieria de Sistemas
 }%
@@ -29,15 +26,18 @@
 \textbf{Resumen}
 \end{center}
 
-El objetivo de Business Intelligence es permitir que la administración tome decisiones más inteligentes sobre la base del conocimiento extraído de los datos. 
-El articulo tambien tiene como objetivo describir los conceptos de business intelligence y business analytics, asi como la comparacion de ellos,  Tambien mencionar las herramientas respectivas.
+Con el Business Intelligence, a través de una serie de técnicas, se transforman todos los datos de una organización en información, con la cual se podrán identificar posibles indicadores, los cuales serán explotados con objeto de tomar las mejores decisiones. Por ejemplo, listados de ventas o cuadros de control de producción.
+
+El Bussines Analytics, maneja una serie de técnicas (en este caso, utiliza algoritmos predictivos y modelos estadísticos) para transformar los datos en información que tendrá como objeto, predecir posibles resultados (Machines Learnis, Data Minig).
+
 
 
 \begin{center}
 \textbf{Abstract}
 \end{center}
-The objective of Business Intelligence is to allow management to make smarter decisions based on the knowledge extracted from the data.
-The article also aims to describe the concepts of business intelligence and business analytics, as well as comparing them, also mention the respective tools.
+Abstract
+With Business Intelligence, through a series of techniques, all the data of an organization is transformed into information, with which you can identify possible indicators, whatever are exploited in order to make the best decisions. For example, sales listings or production control panels. The Bussines Analytics, handles a series of techniques (in this case, uses predictive algorithms and statistical models) to transform the data into information that it will have as its object, to predict possible results (Machines Learnis, Data Minig).
+
 
 \end{abstract}
 
@@ -50,10 +50,9 @@ The article also aims to describe the concepts of business intelligence and busi
 \section {Introducción}
 
 
-En los últimos años, las organizaciones han recurrido cada vez más a soluciones de software avanzadas para gestionar las cargas de trabajo, mantener la rentabilidad y garantizar la competitividad dentro de sus respectivas industrias. Si bien hay varias opciones disponibles, las herramientas de BI y de BA son posiblemente las soluciones de administración de datos más ampliamente implementadas. \\
-Marcar diferencias entre ambos conceptos no es una labor sencilla, porque los dos parten de un mismo principio: el aprovechamiento de la información para tomar mejores decisiones de negocios.
+Una forma de verlo, es que Inteligencia de negocios (BI) puede considerarse el segmento de tecnológica (modelos multidimensionales, ETLs, self-service, etc.) mientras que BA es más la acción que se da del lado del negocio al tomar decisiones (usando BI cómo parte de los inputs). A manera de analogía, sería como decir que BI es a BA como Data Engineering es a Data Science. ambos conceptos son hermanos y se intersecan. Business Analitycs incorpora Business Intelligence en otras palabras BA es la evolución del BI, tienes análisis descriptivo en BA análisis con predicciones y otros,business analytics él nos va a permitir identificar patrones replantear y hipótesis,pueda ser con ver por ejemplo predecir los costos de generación transmisión distribución y comercialización entonces aquí ya tengo un histórico del costo seguramente con y con los cuales no voy a basar para poder predecir los costos al digamos en el período de tiempo que lo que lo solicite otro escenario puede ser analizar fallos de la infraestructura para en planificación de mantenimientos.
+Inteligencia de negocios (BI) es al día de hoy y Analista de Datos (BA)maneja modelos estadísticos para predecir tus indicadores, ejemplo BI te dice cuanto haz vendido y el BA te puede ayudar con tu budget, aunque te debo decir que yo siempre he hecho analytics y no puedes predecir sin analizar el pasado.
 
-\par El resto de este articulo esta organizado de la siguiente manera. En la Sección 2 se explica el concepto de business intelligence y como se aplica, como tambien sobre business analytics, y la comparación entre business intelligence y analytics. En la Sección 3 se explica el analisis, y finalmente las conclusiones se encuentran en la Sección 4.
 
 
 %-----------------------------------------------------------------
@@ -62,10 +61,15 @@ Marcar diferencias entre ambos conceptos no es una labor sencilla, porque los do
 \subsection{Business Intelligence}
 
 \subsection{Business Analytics}
-Hay muchos puntos de vista sobre cómo definir los análisis de negocios, es más que un simple análisis, mientras que las analíticas y las analíticas de negocios a veces se usan indistintamente, tienen focos diferentes. Si bien es esencial, analitycs es solo una parte de la analítica empresarial.
-El análisis de negocio(Business Analytics, BA) es el conjunto de métodos y técnicas utilizadas para trabajar como enlace entre los stackeholders, con el fin de comprender la estructura, políticas y operaciones de una organización y recomendar soluciones que permitan a la organización alcanzar sus objetivos (IIBA: International Institute of Business Analysis).\\\\
-El análisis de negocios implica la comprensión de cómo funcionan las organizaciones para llevar a cabo sus propósitos, y la definición de las capacidades que una organización requiere para proporcionar productos y servicios a los grupos de interés externos. Incluye la definición de los objetivos de la organización, cómo esos objetivos se conectan a objetivos específicos, que determinan las líneas de acción que una organización tiene que realizar para alcanzar esas metas y objetivos, y definir cómo las distintas unidades de organización y las partes interesadas dentro y fuera de esa organización interactúa.
-Aplicaciones del analisis de negocio:
+En términos generales, los sistemas de inteligencia empresarial se utilizan para mantener, optimizar y optimizar las operaciones actuales. El término se refiere a tecnologías, aplicaciones y prácticas para la recopilación, integración, análisis y presentación de información comercial. El propósito de la inteligencia empresarial es apoyar la toma de decisiones empresariales basadas en datos. La inteligencia empresarial a veces se utiliza indistintamente con libros informativos, herramientas de informes y consultas y sistemas de información ejecutiva.
+BI mejora y mantiene la eficiencia operativa y ayuda a las empresas a aumentar la productividad organizacional. El software de inteligencia empresarial ofrece muchos beneficios, incluidas potentes capacidades de informes y análisis de datos. Al utilizar los mecanismos de visualización de datos enriquecidos de BI, como paneles en tiempo real, los gerentes pueden generar informes intuitivos y legibles que contienen datos relevantes y procesables.
+
+Entonces, BI ofrece informes y análisis, ¿no son solo dos palabras para lo mismo? Muchas personas, tanto dentro como fuera de la industria del software, utilizan incorrectamente informes y análisis de manera intercambiable, lo que es una de las causas de la confusión detrás de la combinación de BA / BI.
+La presentación de informes es "el proceso de organizar datos en resúmenes informativos para monitorear el desempeño de las diferentes áreas de una empresa". Recopila datos y los entrega en un formato digerible.
+La analítica es "el proceso de explorar datos e informes para extraer información significativa, que se puede utilizar para comprender mejor y mejorar el rendimiento del negocio". Esta función toma el "qué" de los datos proporcionados por los informes y saca conclusiones e ideas, ofreciendo usuarios un "por qué" y un "cómo". Básicamente, las funciones de informespresentan datos y las características analíticas interpretan los datos. Ambas son características cruciales y generalmente serán ofrecidas por las soluciones BA y BI.
+
+Las visualizaciones de datos tienen un propósito similar al de los informes. Ambas características funcionan como una herramienta para la organización y presentación de datos. Las visualizaciones amplifican las funciones de informes al ofrecer representaciones de datos en un medio fácil de interpretar. Los servicios de decisión reducen el enfoque de la inteligencia empresarial a la información financiera, con muchos sistemas que ofrecen medidas de cumplimiento integradas y detección de fraude.
+Las capacidades de integración aseguran que un sistema de inteligencia de negocios pueda funcionar a la perfección con las herramientas actualmente instaladas. Además, las características de integración ayudan a extraer datos de múltiples fuentes, desde bases de datos internas hasta centros Big Data más complejos. Muchas herramientas de BI emplean procesamiento analítico en línea (OLAP) para realizar análisis sofisticados, multidimensionales y detallados
 \begin{itemize}
 \item Business Intelligence: Conectar a las personas con la información cuándo, dónde y cómo lo necesiten, y colabore para mejorar el rendimiento de negocio.
 \item Rendimiento financiero y gestión estratégica: Dirigir la estrategia de gestión hacia los objetivos más rentables mediante información fiable y puntual y la creación de informes transparente y oportuna.
@@ -91,7 +95,13 @@ A continuación, se muestra un cuadro comparativo entre Business Intelligence y 
 
 \subsection{Herramientas}
 \textbf{Business Intelligence :}
-Las herramientas de inteligencia empresarial (BI) son tipos de software de aplicación que recopilan y procesan grandes cantidades de datos no estructurados que proceden de sistemas internos y externos, incluidos libros, publicaciones, documentos, historias clínicas, imágenes, archivos, correo electrónico, vídeos y otros orígenes empresariales. Aunque no son tan flexibles como las herramientas de análisis de negocios, las herramientas de BI ofrecen un modo de acumular datos para encontrar información, principalmente mediante consultas. Estas herramientas también ayudan a preparar los datos para analizarlos con el fin de crear informes, paneles y visualizaciones de datos.\\
+Business Intelligence : Las herramientas de in- teligencia empresarial (BI) son tipos de software de aplicaci´on  que  recopilan  y  procesan  grandes  cantidades de datos no estructurados que proceden de sistemas internos y externos, incluidos libros, publicaciones, documentos,    historias    cl´ınicas,    im´agenes,    archivos, correo electr´onico, v´ıdeos y otros or´ıgenes empresariales. Aunque no son tan flexibles como las herramientas de an´alisis  de  negocios,  las  herramientas  de  BI  ofrecen  un modo  de  acumular  datos  para  encontrar  informaci´on, principalmente mediante consultas. Estas herramientas tambi´en  ayudan  a  preparar  los  datos  para  analizarlos con el fin de crear informes, paneles y visualizaciones de datos.
+Ventajas de las herramientas de Business Intelli- gence
+- La capacidad de analizar de forma combinada infor- maci´on interna y externa procedente de distintas fuentes y sistemas.
+-Una  mayor  profundidad  de  an´alisis  y  una  capacidad ampliada de reporting.
+-La   posibilidad   de   remontar   ese   an´alisis   atr´as   en   el tiempo en base a series hist´oricas.
+-La  capacidad  de  realizar  proyecciones  y  pron´osticos  de futuro en base a toda esa informaci´on.
+ ayudan a preparar los datos para analizarlos con el fin de crear informes, paneles y visualizaciones de datos.\\
 \textbf{ Ventajas de las herramientas de Business Intelligence}\\
 - La capacidad de analizar de forma combinada información interna y externa procedente de distintas fuentes y sistemas.\\
 -Una mayor profundidad de análisis y una capacidad ampliada de reporting.\\
@@ -111,7 +121,12 @@ Es una plataforma de inteligencia de datos para tableros interactivos, análisis
 
 \textbf {Business Analytics :}
 
-Las herramientas de análisis de negocios son tipos de software de aplicación que recuperan datos de uno o varios sistemas empresariales y los combinan en un repositorio, como un almacén de datos, para revisarlos y analizarlos. La mayoría de las organizaciones utilizan más de una herramienta de análisis, como hojas de cálculo con funciones estadísticas, paquetes de software estadístico, sofisticadas herramientas de minería de datos y herramientas de modelado predictivo.  Juntas, estas herramientas de análisis de negocios le aportan a la organización una visión completa de la compañía que le permite conocer y comprender el negocio, de modo que pueden tomar mejores decisiones en cuanto a operaciones comerciales, conversiones de clientes, etc.
+En el actual mercado, cuando hablamos de Business Intelligence y Business Analytics siempre hay confusión permeando ambas nomenclaturas, principalmente para quienes aún están empezando a entender sus conceptos y cómo aplicarlas. La distinción entre Business Intelligence y Business Analytics es fundamental para su aplicabilidad de forma eficaz en las empresas.
+Ambos enfoques están en la punta de un gran cambio y están orientados a proporcionar una visión amplia en la información de negocios. De la misma forma, hay un énfasis creciente en herramientas superiores y softwares más avanzados en la toma de decisiones. Los CEO de empresas a menudo admiten que el business analytics (BA) camina junto con el BI.
+A pesar de ser distintas, las dos herramientas están conectadas. Business Intelligence proporciona una manera de acumular datos para encontrar información principalmente a través de preguntas, informes y procesos analíticos en línea. El único problema es que las herramientas de BI estándar no son muy flexibles y la mayoría de las bases de datos no están diseñadas para cambios rápidos.
+Por otro lado, el business analytics se aprovecha de datos estadísticos y cuantitativos para modelado explicativo, funcionando como una brújula para organizar la medición de riesgos y prever resultados. El resultado de esta adhesión es una percepción agregada de las informaciones empresariales, creando un nuevo tipo de inteligencia, capaz de optimizar el proceso de toma de decisiones dentro de la organización, capaz de responder a las exigencias inherentes a escenarios cada vez más complejos y competitivos.
+
+
 \\
 \textbf{ Ventajas de las herramientas de Business Analytics}\\
 - Te permite tener claridad de los atributos positivos internos de la organización y que están bajo control.\\
@@ -169,7 +184,8 @@ Las fortaleza de las 7S  es que es una herramienta de diagnostico para entender 
 \item En forma exclusiva, la inteligencia empresarial y el análisis de negocios forman los componentes esenciales requeridos por una empresa para administrar su información de manera efectiva.
 \\
 \item 
-Las dos terminologías parecen tener similitudes de una manera que hace que los estudiantes deduzcan que están conectados. De hecho, vale la pena reconocer que la analítica es una función de la inteligencia empresarial. La información analizada mediante análisis para predecir el futuro es la misma información obtenida del componente de inteligencia de la empresa. Tanto BI como BA se enfocan en impulsar a la compañía a avanzar enérgicamente
+En conclusion, los sistemas de inteligencia empresarial se utilizan para mantener, optimizar y optimizar las operaciones actuales. El término se refiere a tecnologías, aplicaciones y prácticas para la recopilación, integración, análisis y presentación de información comercial. El propósito de la inteligencia empresarial es apoyar la toma de decisiones empresariales basadas en datos
+
 \\
 \item En un medio globalizado y audaz como el del mundo empresarial, podemos ver que el entorno en el que la inmensa mayoría de las empresas tiene soportados los procesos de negocio con diferentes sistemas de información y estrategias, los ubica en un mercado tan competitivo como el actual, Hoy se ha convertido en un problema, por lo que la Inteligencia de Negocios se erige como una pieza clave para ser proactivo a la hora de tomar mejores decisiones y de conseguir mejor control de negocio y ventajas que nos diferencien de la competencia.
 \\
